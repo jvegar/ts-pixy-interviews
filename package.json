@@ -8,7 +8,6 @@
     "apps/*"
   ],
   "scripts": {
-    "commit": "git add . && cz",
     "affected:deploy": "lerna run --since HEAD^ deploy",
     "affected:test": "lerna run --since HEAD^ test",
     "affected:list": "lerna ls --since HEAD^ -a",
@@ -18,11 +17,6 @@
     "test": "jest -c configs/jest.config.js",
     "lint": "eslint",
     "lint:fix": "eslint --cache --cache-location .cache/ --fix"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   },
   "commitlint": {
     "extends": [
@@ -51,9 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
     "babel-loader": "^8.1.0",
-    "commitizen": "^4.2.2",
     "core-js": "^3.6.5",
-    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.11.0",
     "fork-ts-checker-webpack-plugin": "^5.2.0",
     "husky": "^4.3.0",
