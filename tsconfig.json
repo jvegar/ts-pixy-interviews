@@ -12,6 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "importHelpers": true,
     "incremental": true,
     "tsBuildInfoFile": ".cache/tsconfig.tsbuildinfo",
